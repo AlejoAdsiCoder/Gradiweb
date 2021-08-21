@@ -1,0 +1,12 @@
+<div class="main-weather" *ngIf="weather">
+
+  <h2>Place to visite</h2>
+ 
+  <div class="city">
+    <!-- <fa-icon [icon]="['fas', 'map-marker-alt']"></fa-icon> -->
+    <img src="https://imagenes.elpais.com/resizer/kYriuDX5QmaNSz4n_2kSiorchbA=/1960x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/GL43NNQSJDFRGCPBPXOXPCBXB4.jpg">
+    <div class="cloud"><p>{{weather.weather[0].description}} </p></div>
+    <div class="temp"><p>{{weather.main.temp}} °C</p></div>
+    <!-- <p>Temperature: {{weather.main.temp}} °C</p> -->
+  </div>
+</div>

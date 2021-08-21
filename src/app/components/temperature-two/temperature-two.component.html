@@ -1,0 +1,25 @@
+<!-- <div class="tempera" *ngIf="weather"> -->
+ 
+  <div class="city" *ngIf="weather">
+
+    <div class="temperature">
+      <!-- <fa-icon [icon]="['fas', 'map-marker-alt']"></fa-icon> -->
+      <div class="icon"><img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png"></div>
+      <div class="cloudsquare">
+        
+        <div class="temp"><p>{{weather.main.temp}} °C</p></div>
+        <div class="country"><p>{{weather.name}} </p></div>
+        
+        <div class="state"><p>{{weather.sys.country}}</p></div>
+      </div>
+      <!-- <div class="icon">{{weather.weather[0].icon}}</div> -->
+      
+      <!-- <p>Temperature: {{weather.main.temp}} °C</p> -->
+    </div>
+    <div class="inf">
+      <div class="hum"><p>Humidity: {{weather.main.humidity}} </p></div>
+       
+      
+    </div>
+  </div>
+<!-- </div> -->

@@ -1,0 +1,32 @@
+<div class="list-weather" *ngIf="forecast">
+  <!-- <fa-icon [icon]="['fas', 'map-marker-alt']"></fa-icon> -->
+  <h2> <strong>3 Days</strong> Forecast</h2>
+
+  <div class="list-days" > 
+    <!-- <div *ngIf="daily <= 5"></div> -->
+    <div class="week row" *ngFor="let daily of forecast | slice:0:3">
+        <div class="icon"><img src="https://openweathermap.org/img/wn/{{daily.weather[0].icon}}@2x.png"></div>
+
+        <p class="day">{{daily.dt_txt | date:'EEEE'}}  <br> {{daily.weather[0].main}}</p>
+        <div class="temp">
+          <p>{{daily.main.temp | number:'1.0-0'}}&deg;</p>
+        </div>
+    </div>  
+    <!-- <div class="week row day2 next-days">
+        <p class="col-md day">{{da.cod | date:'EEEE'}} <br> Clear</p>
+        <div class="temp col-md-5">
+          <p>32 / 23</p>
+        </div>
+    </div>
+    
+    <div class="week row day3 next-days">
+        <p class="col-md day">{{forecast.cod | date:'EEEE'}} <br> Cloudy</p>
+        <div class="temp col-md-5">
+          <p>32 / 23</p>
+        </div>
+    </div> -->
+  </div>
+  <!-- <p>Temperature: {{weather.main.temp}} °C</p> -->
+</div>
+
+<!-- *ngFor="let daily of forecast" -->

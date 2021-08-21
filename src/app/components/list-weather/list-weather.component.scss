@@ -1,0 +1,100 @@
+.main-weather {
+    width: 90px;
+    position: absolute;
+    top: 107px;
+
+    div {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+}
+
+.list-days {
+    justify-content: space-between;
+    min-height: 182px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-weight: lighter;
+    }
+
+}
+
+// .cloud {
+//     min-height: 64px;
+//     width: 100%;
+//     border-radius: 0 27px 27px 12px;
+//     z-index: 2;
+//     background: #2f3383;
+//     position: absolute;
+//     top: 0;
+// }
+
+// .temp {
+//     min-height: 50px;
+//     width: 100%;
+//     border-radius: 0 0 27px 12px;
+//     z-index: 1;
+//     position: absolute;
+//     bottom: -39px;
+//     background: #7d68e9;
+//     position: absolute;
+//     top: 41px;
+//     min-height: 76px;
+// }
+
+.week {
+    background: white;
+    border-radius: 9px;
+    min-height: 55px;
+    margin: 0 auto;
+    box-shadow: 0px 21px 41px -6px rgba(0,0,0,0.46);
+    margin: 0;
+
+    .icon {
+        width: 50px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .day {
+        padding: 0 15px;
+    }
+
+    .temp {
+        flex-grow: 2;
+    }
+}
+
+.day {
+    margin: 0;
+}
+
+.temp {
+    background: #7d63fd;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    justify-content: center;
+
+    * {
+        margin: 0;
+    }
+}
+
+.next-days {
+    .temp {
+        background-color: #dce9f4;
+        color: black;
+    }
+}
+
+// .week {
+//     display: flex;
+// }

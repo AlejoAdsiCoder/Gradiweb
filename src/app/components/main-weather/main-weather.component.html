@@ -1,0 +1,6 @@
+<div class="main-weather" *ngIf="weather">
+  <!-- <fa-icon [icon]="['fas', 'map-marker-alt']"></fa-icon> -->
+  <div class="cloud"><p>{{weather.weather[0].description}} </p></div>
+  <div class="temp"><p>{{weather.main.temp}} °C</p></div>
+  <!-- <p>Temperature: {{weather.main.temp}} °C</p> -->
+</div>
