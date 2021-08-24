@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/Gradiweb'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/Gradiweb/'}),
+    res.sendFile('index.html', {root: 'dist/Gradiweb/index.html'}),
 );
 
 // Start the app by listening on the default Heroku port
